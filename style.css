@@ -1,0 +1,172 @@
+
+body{
+	padding: 0px;
+	margin: 0px;
+}
+h1{
+	color: #227947;
+	font-size: 48px;
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: -1px;
+	
+}
+h2{
+	color: #1d6739;
+	font-size: 18px;
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: -1px;
+	font-weight: 400;
+	line-height: 1;
+}
+p{
+	margin: 0px 0px 20px;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	padding: 0px;
+	line-height: 0.8;
+}
+.conteiner{
+	width: 1200px;
+	margin: 92px auto;
+	padding: 0px 7px 0px;
+	box-sizing: border-box;
+}
+.calendar{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.month{
+	width: 182px;
+	margin-top: 15px;
+	border: 1px solid #92c29d;
+	border-radius: 5px;
+	background: #ebf5ec;
+	padding: 9px 14px 13px 16px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.month img{
+	margin: 2px 0px 12px;
+}
+.month__div span{
+	font-size: 14px;
+	color: #0d592d;
+	font-family: 'Open Sans', sans-serif;
+}
+.month-header{
+	display: flex;
+    margin: 0px auto 7px;
+}
+.month-header div{
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	margin-bottom: 2px;
+	margin-right: 2px;
+}
+.weekend{
+	background: #e2907a !important;
+}
+.weekend span{
+	color: #fff !important;
+}
+.month-day_row{
+	display: flex;
+}
+.month-day_row div{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	margin-bottom: 2px;
+	margin-right: 2px;
+	cursor: pointer;
+	text-align: center;
+}
+.month-day_row div:hover span{
+	color: #fff !important;
+	
+}
+.month-day_row div:hover{
+	background: #77b97e;
+	transition: all 0.5s;
+}
+.contact{
+	padding-top: 25px;
+}
+.contact p{
+	color: #2f2f2f;
+	margin-bottom: 8px;
+}
+.contact__input{
+	width: 179px;
+	border: 1px solid #909090;
+	background: #f2f2f2;
+	padding: 10px 12px;
+	box-sizing: border-box;
+	box-shadow: inset 10px 3px 15px 0px rgba(219,219,219,1);
+	outline:none;
+}
+.button{
+	width: 182px;
+	background: #68a977;
+	border: none;
+	color: #fff;
+	padding: 10px 0px;
+	font-size: 16px;
+	margin-left: 15px;
+	cursor: pointer;
+	outline:none;
+}
+@media screen and (max-width: 1200px) {
+	.conteiner{
+		width: 800px;
+	}
+}
+
+@media screen and  (max-width: 820px) {
+	.conteiner{
+		width: 600px;
+	}
+}
+@media screen and  (max-width: 630px) {
+	.conteiner{
+		width: 400px;
+	}
+}
+@media screen and  (max-width: 410px) {
+	.conteiner{
+		width: 300px;
+	}
+	.month{
+	margin: 16px auto 0;
+	}
+	.contact{
+		margin: 0 auto;
+		text-align: center;
+	}
+	.button{
+		margin: 20px auto;
+	}
+}
+.month-day_row .active{
+	background: #77b97e;
+	color: #fff;
+}
+.month-day_row .active span{
+	color: #fff;
+}
+.month-day_row .reserved{
+	background: pink;
+}
+.modul{
+	display: none;
+}
+.modul span{
+	font-size: 20px;
+	color: #0d592d;
+	font-family: 'Open Sans', sans-serif;
+}
